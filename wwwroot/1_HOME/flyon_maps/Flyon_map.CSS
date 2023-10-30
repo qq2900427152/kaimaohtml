@@ -1,0 +1,315 @@
+
+path{
+    stroke: white;
+    fill: transparent;
+}
+
+g:hover{
+    transform: translate(-5px,-5px);
+    transition: 0.5s;
+    fill: #ba3e3c;
+    cursor: pointer;
+}
+
+.tpa:hover{
+    fill: #ba3e3c;
+    transform: translate(-5px,-5px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+.tpa1:hover{
+    font-weight: 800;
+    font-size: medium;
+    color: #ba3e3c;
+    transform: translate(-3px,-3px);
+     transition: 0.5s;
+     cursor: pointer;
+ }
+
+.bkk:hover{
+    fill: #ba3e3c;
+    transform: translate(-5px,-5px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.bkk1:hover{
+    font-weight: 800;
+    font-size: medium;
+    color: #ba3e3c;
+    transform: translate(-3px,-3px);
+     transition: 0.5s;
+     cursor: pointer;
+ }
+
+.jpn:hover{
+    fill: #ba3e3c;
+    cursor: pointer;
+}
+
+
+.jpn1:hover{
+    font-weight: 800;
+    font-size: medium;
+    color: #ba3e3c;
+    transform: translate(-3px,-3px);
+     transition: 0.5s;
+     cursor: pointer;
+ }
+
+
+.kor:hover{
+    fill: #ba3e3c;
+    cursor: pointer;
+}
+
+.kor1:hover{
+    font-weight: 800;
+    font-size: medium;
+    color: #ba3e3c;
+    transform: translate(-3px,-3px);
+     transition: 0.5s;
+     cursor: pointer;
+ }
+
+.hkg:hover{
+    fill: #ba3e3c;
+    transform: translate(-5px,-5px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.hkg1:hover{
+    font-weight: 800;
+    font-size: medium;
+    color: #ba3e3c;
+    transform: translate(-3px,-3px);
+     transition: 0.5s;
+     cursor: pointer;
+ }
+ 
+
+/* ---------地圖文字內容-------- */
+
+
+.go_arrive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.goPlace{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    padding-top: 5%;
+    font-weight: 700;
+    font-size: x-large;
+}
+
+.arrivePlace{
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    padding-top: 5%;
+    font-weight: 700;
+    font-size: x-large;
+
+}
+
+.go_arriveH2 {
+    color: white;
+    font-weight: 400;
+    letter-spacing: 3px;
+    font-size: medium;
+}
+.gobox {
+    width: 40%;
+}
+.arrivebox{
+    width: 40%;
+}
+.go_arriveimg {
+    width: 5%;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+
+.go_arriveimg img{
+    width: 100%;
+}
+
+.country{
+    display: flex;
+    width: 100%;
+}
+
+.mapsvg{
+    width: 50%;
+    margin-left: 20px;
+}
+
+.mapssSvg{
+    width: 90%;
+    height: 90%;
+}
+
+
+.countrybar{
+    display: flex;
+    width: 50%;
+    
+}
+
+.countrybar ul{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    letter-spacing: 1px;
+}
+
+.countrybar li{
+    margin-bottom: 10px;
+}
+
+.countrybar ul a{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+    display: block;
+    width: 185px;
+    height: 18px;
+    margin-bottom: 10px;
+}
+
+.countrybarUl{
+    width: 100%;
+    column-count: 2;
+    height: 9   0%;
+}
+
+.countrybarUl h6{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: small;
+    font-weight: 800;
+}
+
+#countrybarfirsth6{
+    margin-top: -3px;
+    color: rgba(255, 255, 255, 0.385);
+}
+
+/* ---------mapsmenu-------- */
+.mapsmenu{
+    height: 70px;
+    width: 100%;
+}
+
+.mapscorrectbtn{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.correctbtn1 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    font-size: medium;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    margin-right: 10%;
+    cursor: pointer;
+    margin-bottom: 80px;
+    visibility: hidden;
+    
+}
+
+.correctbtn2 {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    letter-spacing: 5px;
+    font-size: medium;
+    font-weight: 500;
+    width: 200px;
+    height: 50px;
+    margin-right: 10%;
+    cursor: pointer;
+    margin-bottom: 80px;
+    visibility: hidden;
+}
+
+.correctbtn3{
+    background-color: transparent;
+    color: white;
+    background-color: #ba3e3c;
+    border: none;
+    border-radius: 5px;
+    font-size: medium;
+    font-weight: 900;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    
+}
+
+.correctbtn3:hover{
+    background-color: white;
+    color: #ba3e3c;
+    font-size: larger;
+}
+
+.datepickerText{
+    letter-spacing: 1px;
+}
+
+.mapscorrectbtn3{
+    width: 100%;
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.correctbtn3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.correctbtn3 img{
+    width: 25px;
+    margin-left: 10px;
+}
+
+.btnfake{
+    width: 200%;
+    height: 50px;
+}
+
+
+
+/* ------------------日曆---------------------- 
+
+

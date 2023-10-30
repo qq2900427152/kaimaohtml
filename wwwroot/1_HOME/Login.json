@@ -1,0 +1,39 @@
+[
+    {
+        "MemberID":"100006",
+        "MemberName":"CHEN SIH-CING",
+        "Gender":"fasle",
+        "Address":"台南市北區公園南路370巷18號樓之2",
+        "Email":"owczzzz@gmail.com",
+        "Phone":"0911813169",
+        "Birthday":"1994-04-05",
+        "Password":"5555",
+        "PIN":5555,
+        "TotalPoint":10000
+    },
+    {
+        "MemberID":"100007",
+        "MemberName":"LAN SIH-CING",
+        "Gender":"true",
+        "Address":"台北市北區公園南路370巷18號樓之2",
+        "Email":"test@gmail.com",
+        "Phone":"0911813169",
+        "Birthday":"1994-04-05",
+        "Password":"5555",
+        "PIN":5555,
+        "TotalPoint":30000
+    },
+    {
+        "MemberID":"100007",
+        "MemberName":"MAN SIH-CING",
+        "Gender":"true",
+        "Address":"台北市北區公園南路370巷18號樓之2",
+        "Email":"testt@gmail.com",
+        "Phone":"0911813169",
+        "Birthday":"1994-04-05",
+        "Password":"5555",
+        "PIN":5555,
+        "TotalPoint":50000
+    }
+]
+

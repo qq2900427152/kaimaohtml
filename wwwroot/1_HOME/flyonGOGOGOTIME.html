@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLYON AIRLINE</title>
+    <link rel="stylesheet" href="flyon.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./flyon_maps/Flyon_map.CSS">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.10/dist/vue.js"></script>
+    <link rel="stylesheet" href="./flyon_maps/calendar.css">
+    <link rel="stylesheet" href="./jquery-ui-1.12.1/jquery-ui.css">
+    <link rel="stylesheet" href="./flyon_maps/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"
+        integrity="sha512-RCgrAvvoLpP7KVgTkTctrUdv7C6t7Un3p1iaoPr1++3pybCyCsCZZN7QEHMZTcJTmcJ7jzexTO+eFpHk4OCFAg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div id="goplacepopdown">
+        <div class="mapsmenu">
+            <div class="mapsmenuimg">
+                <img src="./img/logo.png" class="logo">
+            </div>
+            <div class="mapsmenutext">
+                <span class="gppddown" id="gppddown1">From / to</span>
+                <span class="gppddown" id="gppddown2">Dates</span>
+                <span class="gppddown" id="gppddown3">Guests</span>
+            </div>
+            <div class="mapscloseBtn">&times;</div>
+        </div>
+
+    </div>
+
+    <div class="popLogin">
+        <div class="poploginBox">
+            <div class="flyonPoint">
+                <span class="flyonpointspan">100</span>
+                <span class="flyonpointh5">Flyon Point</span>
+            </div>
+            <div id="poploginNamebtn" class="poploginName">
+                <div class="poploginnameround">L</div>
+                <i class="arrow down"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <img src="./img/logo.png" class="logo" onclick="location.href = './flyon.html'">
+        <div class="menuLeft">
+            <ul>
+                <li class="menuleftLi">
+                    <a href="#" class="meuleftA">預定行程</a>
+                </li>
+                <li><a href="./flyonGOGOGOTIME.html">班機時刻</a></li>
+                <li><a href="./flyonGOGOGOMOVE.html">班機動態</a></li>
+                <li><a href="#" class="meuleftA2" id="moreSearch_button">準備啟程</a></li>
+            </ul>
+        </div>
+        <div class="menuRight">
+            <ul>
+                <li><a href="#" class="menuRcheckin">Check in</a></li>
+                <li><a href="#" class="menuRregister">註冊</a></li>
+                <li><a href="#" id="show-login">登入</a></li>
+            </ul>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </div>
+    </div>
+
+    <div class="popbiglogin">
+        <div class="popbigloginbox">
+            <div class="hiName">
+                <h6 class="hiNameh6-1">Hi</h6>
+                <h3 class="hiNameh3">LAN</h3>
+                <h6 class="hiNameh6-2">kaimaolan@gmail.com</h6>
+                <div class="hinameRed">RED</div>
+            </div>
+
+            <div class="Myflyon">
+                <div class="MyflyonName">My flyon</div>
+                <i class="arrow right"></i>
+            </div>
+            <div class="logout">
+                <div class="logouth6" id="logout">Log out</div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="mobile-nav">
+        <a href="#" class="mobile-navDown">預定行程</a>
+        <div class="moble-navdowndiv"></div>
+        <a href="#">班機時刻</a>
+        <a href="#">班機動態</a>
+        <a href="#">準備啟程</a>
+        <div class="rere">
+            <a href="#">Check in</a>
+            <a href="#">註冊</a>
+        </div>
+    </nav>
+
+    <div class="popup">
+        <div class="close-btn">&times;</div>
+        <div class="form">
+            <h2>Log in</h2>
+            <div class="form-element">
+                <label for="email">信箱:</label>
+                <input type="text" id="email" placeholder="請輸入信箱">
+            </div>
+            <div class="form-element">
+                <label for="password">密碼:</label>
+                <input type="password" id="password" placeholder="請輸入密碼">
+            </div>
+            <div class="form-element">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">記住我</label>
+            </div>
+            <div class="form-element" id="login">
+                <button>登 入</button>
+            </div>
+            <div class="form-element">
+                <a href="#">忘記密碼</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div style="display:none;" class="mega-box mega-boxRWDA">
+        <div class="content">
+            <div class="row">
+                <div class="rowdivF">
+                    <h3>預定行程</h3>
+                    <ul class="mega-link">
+                        <li><a href="#">搜尋航班</a></li>
+                    </ul>
+                </div>
+                <h3>醫療輔助</h3>
+                <ul class="mega-link">
+                    <li><a href="#">輪椅/行動輔助</a></li>
+                    <li><a href="#">客艙內使用醫療器材</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="rowdivF">
+                    <h3>產品</h3>
+                    <ul class="mega-link">
+                        <li><a href="#">票價產品說明</a></li>
+                    </ul>
+                </div>
+                <h3>旅客</h3>
+                <ul class="mega-link">
+                    <li><a href="#">懷孕旅客</a></li>
+                    <li><a href="#">嬰兒及兒童</a></li>
+                    <li><a href="#">單獨旅行兒童</a></li>
+                    <li><a href="#">其他特殊需求旅客</a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="rowdivF">
+                    <h3>行程內容更改</h3>
+                    <ul class="mega-link">
+                        <li><a href="#">行程管理</a></li>
+                        <li><a href="#">線上退票</a></li>
+                    </ul>
+                </div>
+                <h3>動物</h3>
+                <ul class="mega-link">
+                    <li><a href="#">動物運送</a></li>
+                    <li><a href="#">服務性動物</a></li>
+                </ul>
+            </div>
+            <div class="row rowFake">
+                <div class="rowdivF">
+                    <h3>其他服務項目</h3>
+                    <ul class="mega-link">
+                        <li><a href="#">預選座位</a></li>
+                        <li><a href="#">Galactic Wi-Fi</a></li>
+                        <li><a href="#">預購額外行李</a></li>
+                        <li><a href="#">免稅店購物-béshopping</a></li>
+                        <li><a href="#">台灣高鐵</a></li>
+                    </ul>
+                </div>
+                <div class="rowClose">&times;</div>
+            </div>
+            <div class="row">
+                <div class="rowimg">
+                    <img src="./img/unsplash1.jpg" alt="">
+                    <p>預選座位</p>
+                    <img src="./img/unsplash2.jpg" alt="">
+                    <p>預選額外行李</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="mega-box2" id="moreSearch_card">
+        <div class="content2">
+            <div class="row2">
+                <div class="rowdivF2">
+                    <h3>網路報到</h3>
+                    <ul class="mega-link2">
+                        <li><a href="#">線上報到</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="rowdivF2">
+                    <h3>旅程服務</h3>
+                    <ul class="mega-link2">
+                        <li><a href="#">遺失行李查詢</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row2">
+                <div class="rowdivF2">
+                    <h3>旅行資訊</h3>
+                    <ul class="mega-link2">
+                        <li><a href="#">報到方式介紹</a></li>
+                        <li><a href="#">桃園機場貴賓室</a></li>
+                        <li><a href="#">機場及交通資訊</a></li>
+                        <li><a href="#">旅行文件</a></li>
+                        <li><a href="#">客艙須知</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row2 rowFake2">
+                <div class="rowdivF2">
+                    <h3>行李訊息</h3>
+                    <ul class="mega-link2">
+                        <li><a href="#">基本須知</a></li>
+                        <li><a href="#">特殊行李</a></li>
+                        <li><a href="#">行李異常處理</a></li>
+                        <li><a href="#">超額行李收費標準</a></li>
+                    </ul>
+                </div>
+                <div class="rowClose2">&times;</div>
+            </div>
+            <div class="row2">
+                <div class="rowimg2">
+                    <img src="./img/unsplash3.jpg" alt="">
+                    <p>預選機上餐點</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="FlightInformation">
+        <div class="FlightInformationbox">
+            <div class="fimboxText">
+                <span class="fimboxh3">班機時刻表</span>
+                <span class="fimboxh5">提供未來360天可預訂機位的班機時刻</span>
+            </div>
+            <div class="fimboxMid">
+                <div class="fimboxMmidbox">
+                    <div class="fimboxmidTopbox1">
+                        <span class="fimboxmidTop3">可使用班機動態功能查詢今天以及未來兩天星宇航空最新的班機資訊</span>
+                    </div>
+                    <div class="fimboxmidGOandBack">
+                        <div class="fimboxmidGO">
+                            <span class="fimboxmidGO1">出發地</span>
+                            <span class="fimboxmidGO2">請選擇出發地</span>
+                        </div>
+                        <img src="https://img.icons8.com/material-outlined/96/2f3363/replace.png" />
+                        <div class="fimboxmidArrive">
+                            <span class="fimboxmidGO1">目的地</span>
+                            <span class="fimboxmidGO2">請選擇目的地</span>
+                        </div>
+                        <div class="fimboxmidMid1">
+                            <input type="text" placeholder="YYYY/MM/DD"><span>搭乘日期</span>
+                        </div>
+                    </div>
+                    <div class="fimboxmidline"></div>
+                    <div class="fimboxmidBtn">
+                        <div class="fimboxmidBtnbox">查詢</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <div class="footerbar">
+            <div class="footerAbout">
+                <ul>
+                    <h3 class="footerH2">關於飛昂</h3>
+                    <li><a href="">認識飛昂</a></li>
+                    <li><a href="">媒體中心</a></li>
+                    <li><a href="">旅遊須知</a></li>
+                    <li><a href="">加入團隊</a></li>
+                    <li><a href="">網站導覽</a></li>
+                </ul>
+                <div class="footerAboutImg">
+                    <a href=""><img src="./img/facebook.png" alt="Facebook"></a>
+                    <a href=""><img src="./img/instagram.png" alt="Instagram"></a>
+                    <a href=""><img src="./img/twitter.png" alt="Twitter"></a>
+                    <a href=""><img src="./img/youtube.png" alt="YouTube"></a>
+                </div>
+            </div>
+            <div class="footerAct">
+                <ul>
+                    <h3 class="footerH2">條例宣告</h3>
+                    <li><a href="">運送條款</a></li>
+                    <li><a href="">隱私權保護政策</a></li>
+                    <li><a href="">COOKIE使用政策</a></li>
+                    <li><a href="">顧客服務承諾</a></li>
+                    <li><a href="">智慧財產權與網站手機應用程式使用條款</a></li>
+                    <li><a href="">智慧財產權管理計畫</a></li>
+                </ul>
+            </div>
+            <div class="footerWeb">
+                <ul>
+                    <h3 class="footerH2">相關網站</h3>
+                    <li><a href="">免稅店購物</a></li>
+                    <li><a href="">飛昂小舖</a></li>
+                </ul>
+                <div class="footerWebimg">
+                    <img src="./img/app store.png" alt="App Store">
+                    <img src="./img/google-play-badge.png" alt="Google Play">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./flyon.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/Javascript">
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:false,
+    autoplay:true,
+    autoplayTimeout:5000,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+    <script src="./flyon_maps/Flyon_map.js"></script>
+    <script src="./flyon_maps/calendar.js"></script>
+    <script src="./flyon_maps/jquery-3.6.0.min.js"></script>
+    <script src="./flyon_maps/jquery-ui.min.js"></script>
+    <script src="./flyon_maps/people.js"></script>
+</body>
+
+</html>

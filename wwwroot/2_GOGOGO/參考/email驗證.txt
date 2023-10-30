@@ -1,0 +1,2 @@
+[WEB API] Identity 寄Email驗證帳號和密碼規則
+https://www.dotblogs.com.tw/kinanson/2015/05/13/151271

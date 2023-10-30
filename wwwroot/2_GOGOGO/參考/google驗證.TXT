@@ -1,0 +1,8 @@
+https://blog.darkthread.net/blog/recaptcha-not-robot-notes/
+
+https://www.letswrite.tw/recaptcha-v3/#%e5%be%8c%e7%ab%af%e5%90%91-recaptcha-%e9%a9%97%e8%ad%89
+
+https://chengjhe.blogspot.com/2018/11/how-to-use-recaptcha-v3.html
+
+我的驗證碼
+https://www.google.com/recaptcha/admin/site/567585200/setup

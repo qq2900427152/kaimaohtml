@@ -1,0 +1,524 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+}
+
+*:focus{
+    outline:none;
+}
+/* 最上面(放logo的地方) */
+.navheader {
+    display: flex;
+    background-color: #2f3363;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+}
+
+@media screen and (min-width:574px) {
+    .navheader {
+        display: none;
+    }
+}
+
+
+/* 上面放1.2.3的地方 */
+.navheader2 {
+    background-color: #2f3363;
+    border-top-style: solid;
+    border-color: white;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    display: flex;
+    height: 42px;
+    width: 100%;
+    position: fixed;
+    position: fixed;
+    top: 100px;
+}
+
+@media screen and (min-width:574px) {
+    .navheader2 {
+        display: none;
+    }
+}
+
+/* 個人資料，帳戶詳細資料，聯繫方式 */
+.circle {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* 放logo圖檔的div */
+.img-wrap {
+    width: 60%;
+    /* border: 10px solid white; */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+}
+
+    /* logo */
+    .img-wrap > img {
+        width: 100%;
+    }
+
+
+/* 已有會員bar */
+.navbar {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin-top: 162px;
+    margin-bottom: 162px;
+    margin-left: 45px;
+    margin-right: 45px;
+    width: 450px;
+    height: 38px;
+    justify-content: space-between;
+    background-color: yellow;
+    font-size: 12px;
+    border-radius: 8px;
+    box-shadow: 3px 3px rgba(4, 53, 53, 0.146);
+    font-weight: 700;
+    color: #2f3363;
+}
+
+@media screen and (min-width:574px) {
+    .navbar {
+        margin-top: 45px;
+        margin-bottom: 45px;
+        margin-left: 8%;
+        width: 718px;
+    }
+}
+
+.navbar:hover {
+    background-color: #2f3363;
+    color: white;
+    cursor: pointer;
+}
+
+/* 已有會員bar裡面放文字的div */
+.box {
+    margin: 12px 18px;
+}
+
+/* 個人資料輸入div */
+.personInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*div由上往下排列*/
+    width: 80%;
+    margin: -150px auto;
+    /* border: 5px solid #2f3363; */
+    color: #2f3363;
+}
+
+@media screen and (min-width:574px) {
+    .personInfo {
+        margin: 34px auto;
+    }
+}
+
+.box-pi {
+    box-sizing: border-box;
+    width: 450px;
+    /* border: 1px solid green; */
+    margin-top: 25px;
+}
+
+.box-change1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.box-pi2 {
+    box-sizing: border-box;
+    width: 450px;
+    /* border: 1px solid green; */
+    margin-top: 25px;
+}
+
+@media screen and (min-width:574px) {
+    .box-pi2 {
+        width: 200px;
+        /* border: 1px solid green; */
+
+        margin-right: 25px;
+    }
+}
+
+.caption1 {
+    font-size: 14px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+
+.caption2 {
+    font-size: 12px;
+    font-weight: 900;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.caption3 {
+    font-size: 12px;
+    font-weight: 900;
+    margin-top: 0px;
+}
+
+/*輸入格*/
+.block {
+    width: 95%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+#mailchecking{
+    display:none;
+}
+
+.block2 {
+    width: 95%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+@media screen and (min-width:574px) {
+    .block2 {
+        width: 200px;
+    }
+}
+
+/*下拉選單格*/
+.option {
+    width: 97%;
+    height: 35px;
+    border-radius: 5px;
+}
+
+/*確認按鈕*/
+.combutton {
+    width: 150px;
+    height: 28px;
+    background-color: #e3b1b0;
+    color: white;
+    border-radius: 5px;
+    border: 0ch;
+    font-size: 16px;
+    margin: 0px 135px;
+}
+
+/* 密碼區-div2 */
+.pw {
+    box-sizing: border-box;
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    /*div由上往下排列*/
+    width: 80%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border: 5px solid #2f3363; */
+    color: #2f3363;
+}
+
+@media screen and (min-width:574px) {
+    .pw {
+        margin: 34px auto;
+    }
+}
+
+.box-pw {
+    box-sizing: border-box;
+    width: 450px;
+    /* border: 1px solid green; */
+    margin-top: 25px;
+}
+
+.box-pw-btn {
+    box-sizing: border-box;
+    width: 450px;
+    /* border: 1px solid green; */
+    margin-top: 25px;
+    margin-bottom: 900px
+}
+
+.box-pw5 {
+    display: flex;
+}
+
+.box-pw6 {
+    width: 80%;
+}
+
+.box-pw7 {
+    width: 20%;
+    padding-top: 3px;
+}
+
+/*密碼格*/
+.pwblock {
+    width: 95%;
+    height: 35px;
+    border-radius: 5px;
+    /* background-image: url(./images/icons8-closed-eye-80.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 385px; */
+}
+
+@media screen and (min-width:574px) {
+    .pwblock {
+        width: 160px;
+        background-position: 170px;
+    }
+}
+
+.pwblock2 {
+    width: 200px;
+    
+    height: 35px;
+    border-radius: 5px;
+    /* background-image: url(./images/icons8-closed-eye-80.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 165px; */
+}
+
+.box-pw1 {
+    margin-top: 25px;
+}
+/*密碼規則*/
+.box-pw2 {
+    box-sizing: border-box;
+    margin-left: 0px;
+    width: 430px;
+    background-color: aliceblue;
+}
+
+@media screen and (min-width:574px) {
+    .box-pw2 {
+        width: 210px;
+        margin-top: 25px;
+        margin-left: 0px;
+        height: 153px;
+        padding-right: 5px;
+    }
+}
+/*包住密碼和密碼規則的最外面的div*/
+.box-rwd-pw {
+    width: 500px;
+}
+
+@media screen and (min-width:574px) {
+    .box-rwd-pw {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.box-include-pw {
+    width: 450px;
+}
+
+@media screen and (min-width:574px) {
+    .box-include-pw {
+        width: 210px;
+    }
+}
+/*把創建pin-wrap用的div*/
+.bow-wrap-pin {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+}
+
+.box-pw3 {
+    box-sizing: border-box;
+    width: 200px;
+    margin-top: 25px;
+    margin-right: 18px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:574px) {
+    .box-pw3 {
+        width: 200px;
+        margin-bottom: 42px;
+        margin-right: 25px;
+    }
+}
+/*地址區-div3*/
+.detail {
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+    /*div由上往下排列*/
+    width: 80%;
+    margin: 50px auto;
+    /* border: 5px solid #2f3363; */
+    color: #2f3363;
+}
+
+.box-de {
+    box-sizing: border-box;
+    width: 430px;
+    /* border: 1px solid green; */
+    margin-top: 25px;
+}
+
+@media screen and (min-width:574px) {
+    .box-de {
+        width: 450px;
+    }
+}
+
+.box-de1 {
+    box-sizing: border-box;
+    width: 430px;
+    /* border: 1px solid green; */
+    margin-top: 25px;
+}
+
+@media screen and (min-width:574px) {
+    .box-de1 {
+        width: 210px;
+        margin-right: 18px;
+    }
+}
+
+.box-wrap-detail {
+    box-sizing: border-box;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* width: 200px; */
+}
+
+@media screen and (min-width:574px) {
+    .box-wrap-detail {
+        display: flex;
+        flex-wrap: wrap;
+        width: 460px;
+    }
+}
+
+
+
+/*包住所有內容*/
+.all {
+    /* display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+    "menu content"
+    ; */
+}
+
+@media screen and (min-width:574px) {
+    .all {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+        grid-template-areas:
+            "menu content";
+    }
+}
+
+.content {
+    grid-area: content;
+}
+
+.menu {
+    display: none;
+    grid-area: menu;
+}
+
+@media screen and (min-width:574px) {
+    .menu {
+        display: block;
+    }
+}
+
+.left-bar {
+    width: 400px;
+    height: 100%;
+    /* max-height: max-content; */
+    background-color: #2c2e63;
+    display: flex;
+    flex-direction: column;
+    top: 0px;
+    position: relative;
+}
+
+.lbb3img {
+    position: fixed;
+    bottom: 20px;
+    left: 28px;
+    width: 300px;
+    border: #2f3363 1px solid;
+}
+
+.left-bar-box1 {
+    position: fixed;
+    /* top:20px;
+    left: 20px; */
+    width: 200px;
+}
+
+    .left-bar-box1 > img {
+        width: 150%;
+        margin: 30px 0px;
+        position: absolute;
+        top: -120px;
+        left: -100px;
+    }
+
+.left-bar-inside-box {
+    color: white;
+    font-size: 14px;
+    margin: 25px 40px;
+}
+
+    .left-bar-inside-box:hover {
+        font-size: 15px;
+        font-weight: 400;
+        cursor: pointer;
+    }
+
+.left-bar-inside-box2 {
+    color: white;
+    font-size: 18px;
+    margin: 12px 45px;
+    margin-top: 12px;
+}
+
+/* .left-bar-box3>img{
+    width: 100%;
+    margin: 30px 0px;
+} */
+.left-bar-box2 {
+    /* box-sizing: border-box; */
+    /* margin-top: 150px; */
+    position: fixed;
+    top: 150px;
+    width: 400px;
+}
+
+.left-bar-box3 {
+    /* margin-top: 100px;
+    position: fixed;
+    top: 700px;
+    left: 20px;
+    width: 350px; */
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 150px;
+    margin-top: 50px;
+}

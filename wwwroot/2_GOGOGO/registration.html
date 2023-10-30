@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"> -->
+    <link rel="stylesheet" href="./registration.css">
+    <script src="./jquery-3.6.0.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>註冊</title>
+
+</head>
+
+<body>
+    <div class="all">
+        <div class="menu">
+            <div class="left-bar">
+                <div class="left-bar-box1">
+                    <img style="cursor: pointer;" onclick="location.href = '../1_HOME/flyon.html'"
+                        src="./images/LOGO.png" />
+                </div>
+                <div class="left-bar-box2">
+                    <div class="left-bar-inside-box">- 免費加入</div>
+                    <div class="left-bar-inside-box">- 快速網路訂位</div>
+                    <div class="left-bar-inside-box">- 不定期網路購票優惠</div>
+                    <div class="left-bar-inside-box">- 輕鬆管理網路購票行程</div>
+                    <div class="left-bar-inside-box">- 搭乘BR/B7航班累計哩程</div>
+                    <div class="left-bar-inside-box">- 使用哩程折抵網路票價</div>
+                    <div class="left-bar-inside-box">- 卡籍搭機優惠 </div>
+                    <div class="left-bar-inside-box">- 累計合作夥伴哩程(飛昂聯盟/飯店/租車...等) </div>
+                    <div class="left-bar-inside-box">- 酬賓獎項兌換 </div>
+                    <div class="left-bar-inside-box">- 各項會員優惠方案</div>
+                    <div class="left-bar-inside-box2">加入「無限萬哩遊」會員，最多可享1,000哩，加入後可補登六個月內的行程。</div>
+                </div>
+                <div class="left-bar-box3">
+                    <img class="lbb3img" src="./images/step1.png" alt="" id="step">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <header>
+                <div class="navheader">
+                    <div class="img-wrap">
+                        <img src="./images/未命名-1_工作區域 1.png" alt="">
+                    </div>
+                </div>
+                <div class="navheader2">
+
+                    <div class="circle">
+                        <img src="./images/first.png" style="visibility:visible ;" width="75%" height="75%" id="first">
+                    </div>
+                    <div class="circle">
+                        <img src="./images/second.png" style="visibility:hidden ;" width="75%" height="75%" id="second">
+                    </div>
+                    <div class="circle">
+                        <img src="./images/third.png" style="visibility:hidden ;" width="75%" height="75%" id="third">
+                    </div>
+                </div>
+            </header>
+
+
+            <content>
+
+
+                <div class="navbar">
+                    <div class="box">已經是飛昂會員?</div>
+                    <div class="box">登入 »</div>
+                </div>
+
+                <div class="personInfo" id="area1">
+                    <div class="box-pi">
+                        <p class="caption1">讓我們從您的詳細訊息開始</p>
+                    </div>
+                    <div class="box-pi">
+                        <p class="caption1">地點</p>
+                        <p class="caption3">要加入 FlyOn 常旅客計劃，您必須是符合條件的國家/地區的居民 。</p>
+                    </div>
+                    <div class="box-pi">
+                        <p class="caption2">居住國家</p>
+                        <select class="option" name="country" id="">
+                            <option value="">請選擇</option>
+                            <option value="Taiwan">台灣</option>
+                        </select>
+                    </div>
+                    <div class="box-pi">
+                        <p class="caption1">個人資料</p>
+                        <p class="caption3">請輸入與護照上顯示的姓名完全相同的姓名 。</p>
+                    </div>
+                    <div class="box-pi">
+                        <p class="caption2">稱謂</p>
+                        <select class="option" name="country" id="gender">
+                            <option value="">請選擇</option>
+                            <option value="1">男</option>
+                            <option value="">女</option>
+                        </select>
+                    </div>
+                    <div class="box-change1">
+
+                        <div class="box-pi2">
+                            <p class="caption2">姓氏</p>
+                            <input class="block2" type="text" id="lastname" required>
+                        </div>
+                        <div class="box-pi2">
+                            <p class="caption2">名字</p>
+                            <input class="block2" type="text" id="firstname" required>
+                        </div>
+                    </div>
+                    <div class="box-pi">
+                        <p class="caption2">出生日期</p>
+                        <input class="block" type="date" id="birth" value="日 / 月 / 年" required>
+                    </div>
+                    <div class="box-pi">
+                        <label class="caption2">信箱</label><label id="mail驗證提示"
+                            style="font-size:2px; color:red; display:none;">等待驗證中...</label>
+                        <div id="emailbox" style="display:flex ; margin-top: 5px; width: 450px; height: 35px;">
+                            <input class="block" name="myemail" type="text" id="email" required">
+                            <img src="./images/icons8-wait-40.png" id="emailimg"
+                                style="width:20px; height:20px; margin-top:6px; display:none">
+                        </div>
+                    </div>
+
+                    <div class="box-pi" id="mailchecking">
+                        <label class="caption2">信箱驗證</label>
+                        <div class="mailblock1">
+                            <input class="block1" type="text" name="" id="mailnumber" value="請輸入驗證碼" onfocus="cls()"
+                                onblur="res6()" required>
+                            <input class="mailboxbtn" type="button" id="mailbutton" value="發送驗證信"
+                                onclick="sendEmail()" />
+                        </div>
+
+
+                    </div>
+                    <div class="box-pi">
+                        <input class="combutton" type="button" value="確     認" id="btn1">
+                    </div>
+
+                </div>
+
+                <div class="pw" id="area2">
+                    <div class="box-pw">
+                        <p id="thank1" class="caption1 thankyouname">謝謝XXX ，讓我們保護您的帳戶</p>
+                    </div>
+                    <div class="box-pw">
+                        <p class="caption1">設置您的密碼</p>
+                    </div>
+
+                    <div class="box-rwd-pw">
+
+                        <div class="box-include-pw">
+
+                            <div class="box-pw1">
+                                <label class="caption2">創建密碼</label><span class="caption2" id="wrongAlert"
+                                    style="visibility:hidden; color: red; margin-left: 5px; font-size: 1px;">密碼格式錯誤，請重新輸入!</span>
+                                <div class="box-pw5">
+                                    <div class="box-pw6">
+                                        <input class="pwblock" type="password" minlength="8" id="pwd1">
+                                    </div>
+                                    <div class="box-pw7">
+                                        <img src="./images/icons8-closed-eye-80.png" width="30px" height="30px"
+                                            onclick="ShowPwd1()" id="eye1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" box-pw1">
+                                <label class="caption2">確認密碼</label><span class="caption2" id="wrongAlert1"
+                                    style="visibility:hidden; color: red; margin-left: 5px; font-size: 1px;">二次密碼錯誤!</span>
+                                <div class="box-pw5">
+                                    <div class="box-pw6">
+                                        <input class="pwblock" type="password" minlength="8" id="pwd2">
+                                    </div>
+                                    <div class="box-pw7">
+                                        <img src="./images/icons8-closed-eye-80.png" width="30px" height="30px"
+                                            onclick="ShowPwd2()" id="eye2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <dic class=" box-include-pw">
+
+                            <div class="box-pw2">
+                                <p class="caption1" style="margin-top: 18px ; padding-left: 8px;">
+                                    <img src="./images/icons8-general-mandatory-action-48.png" alt="" height="18"
+                                        width="18">
+                                    <span style="margin-left:10px; ">
+                                        密碼必須至少包含:
+                                    </span>
+                                </p>
+                                <p class="caption1" style="margin-top: 14px ; padding-left: 40px;">
+                                    <img src="./images/icons8-cancel-48.png" alt="" height="18" width="18" id="check1">
+                                    <span style="margin-left:7px;">
+                                        8個字符
+                                    </span>
+                                </p>
+                                <p class="caption1" style="margin-top: 14px ; padding-left: 40px;">
+                                    <img src="./images/icons8-cancel-48.png" alt="" height="18" width="18" id="check2">
+                                    <span style="margin-left:7px;">
+                                        一個大寫字符
+                                    </span>
+                                </p>
+                                <p class="caption1" style="margin-top: 14px ; padding-left: 40px;">
+                                    <img src="./images/icons8-cancel-48.png" alt="" height="18" width="18" id="check3">
+                                    <span style="margin-left:7px;">
+                                        一個數字或特殊字符
+                                    </span>
+                                </p>
+                            </div>
+                    </div>
+                    </dic>
+                    <div class="box-pw">
+                        <p class="caption1">設置您的PIN</p>
+                        <p class="caption3">帳戶驗證和交易需要 Flyon PIN 。</p>
+                    </div>
+                    <div class="bow-wrap-pin">
+
+                        <div class="box-pw3">
+                            <label class="caption2">創建PIN (4位數字)</label>
+                            <div>
+                                <input class="pwblock2" type="password" minlength="4" maxlength="4" id="pwd3"
+                                    onkeyup="value=value.replace(/[^\d]/g,'') ">
+                                <img src="./images/icons8-closed-eye-80.png" width="30px" height="30px"
+                                    onclick="ShowPwd3()" id="eye3">
+                            </div>
+
+                        </div>
+                        <div class=" box-pw3">
+                            <label class="caption2">確認PIN</label> <span class="caption2" id="wrongAlert2"
+                                style="visibility:hidden; color: red; margin-left: 5px; font-size: 1px;">二次密碼錯誤!</span>
+                            <div>
+                                <input class="pwblock2" type="password" minlength="4" maxlength="4" id="pwd4"
+                                    onkeyup="value=value.replace(/[^\d]/g,'') ">
+                                <img src="./images/icons8-closed-eye-80.png" width="30px" height="30px"
+                                    onclick="ShowPwd4()" id="eye4">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="box-pw-btn">
+                        <input class="combutton" type="button" value="確     認" id="btn2">
+                    </div>
+                </div>
+
+                <div class="detail" id="area3">
+                    <div class="box-de">
+                        <p id="thank2" class="caption1">XX,我們怎麼聯繫您？</p>
+                    </div>
+                    <div class="box-de">
+                        <p class="caption1">聯絡地址</p>
+                    </div>
+                    <div class="box-wrap-detail">
+                        <div class="box-de1">
+                            <select class="option" name="country" id="">
+                                <option value="">*國家/地區</option>
+                                <option value="Taiwan">台灣</option>
+                            </select>
+                        </div>
+                        <div class="box-de1">
+                            <input class="block" type="text" id="city" value=" *城市" onfocus="cls()" onblur="res1()"
+                                required>
+                        </div>
+
+                    </div>
+                    <div class="box-wrap-detail">
+                        <div class="box-de1">
+                            <input class="block" type="text" id="state" value=" 州別(選填)" onfocus="cls()" onblur="res2()">
+                        </div>
+                        <div class="box-de1">
+                            <input class="block" type="text" id="postal" value=" *郵遞區號" onfocus="cls()" onblur="res3()"
+                                onkeyup="value=value.replace(/[^\d-]/g,'') " required>
+                        </div>
+
+                    </div>
+                    <div class="box-de">
+                        <input class="block" type="text" name="myaddress" id="address" value=" *地址" onfocus="cls()"
+                            onblur="res4()" required>
+                    </div>
+                    <div class="box-de">
+                        <p class="caption1">聯絡電話</p>
+                    </div>
+                    <div class="box-de">
+                        <p class="caption2">電話號碼</p>
+                        <select style="width:100px; height: 42.5px; border-radius: 5px;" name="tel" id="">
+                            <option value="">國際碼</option>
+                            <option value="886">+886</option>
+                        </select>
+                        <input style="width:160px; height: 35px; border-radius: 5px; margin-left: 8px;" type="text"
+                            id="phone" name="myphone" value=" *電話號碼" onfocus="cls()" onblur="res5()"
+                            onkeyup="value=value.replace(/[^\d-]/g,'') " required>
+                        <input type="text" name="mypoint" value="0" style="display:none" />
+                    </div>
+                    <div class=" box-de">
+                        <input type="checkbox" name="" id="el">
+                        <span class="caption2">提供本人資訊,代表本人確認且接受飛昂航空隱私保護政策</span>
+                    </div>
+                    <div class="box-de">
+                        <input class="combutton" id="btn3" type="submit" style="margin-top: 40px ;" value="加     入">
+                    </div>
+                    <div class="box-de" style="font-size:2px ; margin-top: 200px; margin-bottom: 20px;">
+                        For more detail about how we handle your personal information, please read our Privacy Statement
+                        and
+                        Privacy Policy. Our Membership Terms and Conditions give you more information about the Velocity
+                        program.
+                    </div>
+                </div>
+            </content>
+
+        </div>
+
+    </div>
+
+    <script src="./registration.js"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>

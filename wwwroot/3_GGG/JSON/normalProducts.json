@@ -1,0 +1,107 @@
+[
+    {
+        "giftName":"COH PRD PTCH CHRTR 18",
+        "giftDescribe":"徽章後背包",
+        "giftBrand":"Coach",
+        "giftPoint":"30000",
+        "img":"./images/Products/Normal/COH PRD PTCH CHRTR 18.jpg"
+    },
+    {
+        "giftName":"HEATHER LG SHLDR",
+        "giftDescribe":"HEATHER 大號肩背包",
+        "giftBrand":"Coach",
+        "giftPoint":"40000",
+        "img":"./images/Products/Normal/HEATHER LG SHLDR.jpg"
+    },
+    {
+        "giftName":"BUCKET BAG IN LEATHER MINI",
+        "giftDescribe":"迷你皮革水桶包",
+        "giftBrand":"TOD'S",
+        "giftPoint":"35000",
+        "img":"./images/Products/Normal/BUCKET BAG IN LEATHER MINI.jpg"
+    },
+    {
+        "giftName":"DELIA",
+        "giftDescribe":"DELIA 後背包",
+        "giftBrand":"KIPLING",
+        "giftPoint":"15000",
+        "img":"./images/Products/Normal/DELIA.jpg"
+    },
+    {
+        "giftName":"OFFSPRING NECKLACE",
+        "giftDescribe":"OFFSPRING18K金墜鍊",
+        "giftBrand":"GEORG JENSEN",
+        "giftPoint":"65000",
+        "img":"./images/Products/Normal/OFFSPRING NECKLACE.jpg"
+    },
+    {
+        "giftName":"HALO 18K YELLOW GOLD EARRINGS",
+        "giftDescribe":"HALO 18K黃金鑲鑽耳環",
+        "giftBrand":"GEORG JENSEN",
+        "giftPoint":"75000",
+        "img":"./images/Products/Normal/HALO 18K YELLOW GOLD EARRINGS.jpg"
+    },
+    {
+        "giftName":"GINGER BANGLE",
+        "giftDescribe":"GINGER 手環",
+        "giftBrand":"SWAROVSKI",
+        "giftPoint":"20000",
+        "img":"./images/Products/Normal/GINGER BANGLE.jpg"
+    },
+    {
+        "giftName":"GINGER PENDANT",
+        "giftDescribe":"GINGER 項鍊",
+        "giftBrand":"SWAROVSKI",
+        "giftPoint":"15000",
+        "img":"./images/Products/Normal/GINGER PENDANT.jpg"
+    },
+    {
+        "giftName":"INFINITY BRACELET",
+        "giftDescribe":"INFINITY玫瑰金手鐲",
+        "giftBrand":"SWAROVSKI",
+        "giftPoint":"10000",
+        "img":"./images/Products/Normal/INFINITY BRACELET.jpg"
+    },
+    {
+        "giftName":"MUSES FOUNTAIN PEN",
+        "giftDescribe":"MUSES 系列鋼筆",
+        "giftBrand":"MONTBLANC",
+        "giftPoint":"25000",
+        "img":"./images/Products/Normal/MUSES FOUNTAIN PEN.jpg"
+    },
+    {
+        "giftName":"CASUAL BELT",
+        "giftDescribe":"男士雙面皮帶",
+        "giftBrand":"MONTBLANC",
+        "giftPoint":"15000",
+        "img":"./images/Products/Normal/CASUAL BELT.jpg"
+    },
+    {
+        "giftName":"BLACK 35 MM LEATHER BELT",
+        "giftDescribe":"黑色 35 毫米皮帶",
+        "giftBrand":"MONTBLANC",
+        "giftPoint":"30000",
+        "img":"./images/Products/Normal/BLACK 35 MM LEATHER BELT.jpg"
+    },
+    {
+        "giftName":"BARSTOW WATCH",
+        "giftDescribe":"美式簡約三針時尚腕錶",
+        "giftBrand":"FOSSIL",
+        "giftPoint":"18000",
+        "img":"./images/Products/Normal/BARSTOW WATCH.jpg"
+    },
+    {
+        "giftName":"G-TIMELESS",
+        "giftDescribe":"G-TIMELESS腕錶",
+        "giftBrand":"GUCCI",
+        "giftPoint":"25000",
+        "img":"./images/Products/Normal/G-TIMELESS.jpg"
+    },
+    {
+        "giftName":"LMDM",
+        "giftDescribe":"經典蜜蜂時尚皮帶腕錶",
+        "giftBrand":"GUCCI",
+        "giftPoint":"35000",
+        "img":"./images/Products/Normal/LMDM.jpg"
+    }
+]

@@ -1,0 +1,82 @@
+[
+    {
+        "giftId": 1,
+        "giftName":"廚餘處理機",
+        "giftDescribe":"廚餘處理機",
+        "giftBrand":"AMADANA",
+        "giftPoint":"20000",
+        "img":"./images/Products/Discount/原圖/AMADANA 廚餘處理機.jpg"
+    },
+    {
+        "giftId": 2,
+        "giftName":"EP 頭戴式耳罩",
+        "giftDescribe":"EP 頭戴式耳罩",
+        "giftBrand":"BEATS",
+        "giftPoint":"12000",
+        "img":"./images/Products/Discount/原圖/BEATS EP 頭戴式耳罩.jpg"
+    },
+    {
+        "giftId": 3,
+        "giftName":"COH FLT CRD CSE WINKIE",
+        "giftDescribe":"FLAT CARD CASE卡夾",
+        "giftBrand":"COACH",
+        "giftPoint":"40000",
+        "img":"./images/Products/Discount/原圖/COACH COH FLT CRD CSE WINKIE.jpg"
+    },
+    {
+        "giftId": 4,
+        "giftName":"COH FLT CRD CSE SWEETIE",
+        "giftDescribe":"FLAT CARD CASE卡夾",
+        "giftBrand":"COACH",
+        "giftPoint":"15000",
+        "img":"./images/Products/Discount/原圖/COACH COH FLT CRD CSE SWEETIE.jpg"
+    },
+    {
+        "giftId": 5,
+        "giftName":"SAUVAGE曠野之心香氛",
+        "giftDescribe":"SAUVAGE曠野之心香氛",
+        "giftBrand":"DIOR",
+        "giftPoint":"15000",
+        "img":"./images/Products/Discount/原圖/DIOR SAUVAGE曠野之心香氛.jpg"
+    },
+    {
+        "giftId": 6,
+        "giftName":"POUR HOMME EDT",
+        "giftDescribe":"大吉嶺男性淡香水",
+        "giftBrand":"BVLGARI",
+        "giftPoint":"75000",
+        "img":"./images/Products/Discount/原圖/POUR HOMME EDT.jpg"
+    },
+    {
+        "giftId": 7,
+        "giftName":"SUPERSONIC 吹風機",
+        "giftDescribe":"SUPERSONIC 吹風機",
+        "giftBrand":"DYSON",
+        "giftPoint":"25000",
+        "img":"./images/Products/Discount/原圖/DYSON SUPERSONIC 吹風機.jpg"
+    },
+    {
+        "giftId": 8,
+        "giftName":"乾濕兩用三刀頭電鬍刀",
+        "giftDescribe":"乾濕兩用三刀頭電鬍刀",
+        "giftBrand":"PHILIPS",
+        "giftPoint":"15000",
+        "img":"./images/Products/Discount/原圖/乾濕兩用三刀頭電鬍刀.jpg"
+    },
+    {
+        "giftId": 9,
+        "giftName":"GA LIP POWER",
+        "giftDescribe":"奢華絲緞訂製唇膏",
+        "giftBrand":"GIORGIO ARMANI",
+        "giftPoint":"10000",
+        "img":"./images/Products/Discount/原圖/GA LIP POWER.jpg"
+    },
+    {
+        "giftId": 10,
+        "giftName":"EXTRA LIP TINT",
+        "giftDescribe":"晶鑽桂馥潤色護唇膏",
+        "giftBrand":"BOBBI BROWN",
+        "giftPoint":"25000",
+        "img":"./images/Products/Discount/原圖/EXTRA LIP TINT.jpg"
+    }
+]
